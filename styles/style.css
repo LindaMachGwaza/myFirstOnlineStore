@@ -1,0 +1,520 @@
+/**page background color as required by the task**/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(245, 239, 239);
+    animation: animate 5s ease infinite;
+
+
+}
+
+/**Nav customized, items moved next to each other and centered, with a background color as well**/
+
+#mainNav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    padding: 3px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(226, 202, 192);
+
+}
+
+
+
+/**Logo on Nav bar customised and given a padding on left**/
+nav img {
+    width: 60px;
+    height: 60px;
+    padding-left: 10px;
+}
+
+/**Nav items centered**/
+#mainNav {
+    flex: 1;
+    text-align: center;
+}
+
+/**Removed default bullets from Nav links, moved them next to each other and 
+gave padding as well as position them in the middle**/
+#mainNav ul li {
+    list-style: none;
+    float: left;
+    padding: 8px 12px;
+    position: center;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background:rgb(226, 202, 192);
+}
+/*sub lists customised*/
+#mainNav ul li li:hover{
+    background: lightcoral;
+    
+}
+#mainNav ul li li{
+    display: none;
+    background: rgb(228, 134, 134);
+}
+#mainNav ul li li a{
+    font-size: 17px;
+  
+}
+
+/**Navlinks default color changed to white from blue**/
+#mainNav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/**Color changes when mouse is moved over**/
+#mainNav ul li a:hover {
+    color: rgb(228, 108, 108);
+
+}
+
+.cart ion-icon {
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+nav span {
+    padding-left: 5px;
+}
+
+
+/*.....................LANDING PAGE.........................*/
+
+/*page background image as required by the task*/
+
+
+#landing {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(247, 239, 245, 0.5), rgba(243, 230, 243, 0.5)), url(../media/whitestoreinterior.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+.text-box {
+    width: 90%;
+    color: rgb(41, 9, 41);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/**Text box given a margin top and bottom, font **/
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: rgb(41, 9, 41);
+    font-family: 'Poppins', sans-serif;
+}
+
+/**Button customised and font changed, the default link decoration was removed **/
+.hello-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: rosybrown;
+    border: solid 1px rgb(163, 47, 47);
+    padding: 12px 34px;
+    font-size: 14px;
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hello-btn:hover {
+    border: 1px solid rgb(48, 32, 30);
+    background: salmon;
+    transition: 1s;
+}
+
+/*Footer moved to the bottom of the page*/
+#home {
+    margin-top: 650px;
+}
+
+/*.....................CATALOGUE PAGE..........................*/
+
+
+div.gallery img {
+    border: 1px solid rgb(226, 202, 192);
+    padding: 5px;
+    width: 250px;
+
+}
+
+/**For images to display as thumbnails**/
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.gallery {
+    box-shadow: 0 4px 8px 0 rgb(226, 202, 192);
+    margin: 8px;
+
+}
+
+/*Product description info centered and customised*/
+p.desc {
+    padding: 15px;
+    text-align: center;
+    color: rgb(77, 47, 47);
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/**Image items moved next to each other and they wrap once column is filled, 
+    width set and given equal margin on both sides**/
+.responsive {
+    padding: 0 6px;
+    display: inline-block;
+    width: 20%;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+
+/**Price given a color and moved to the center**/
+.item-price {
+    color: rgb(97, 88, 88);
+    font-size: 20px;
+    text-align: center;
+
+}
+
+/**Add to Cart button customised**/
+.responsive button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: rgb(238, 227, 227);
+    background-color: rgb(97, 73, 73);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+
+}
+
+.responsive button:hover {
+    opacity: 0.7;
+
+}
+
+/**Size chart moved to the center, given a color and padding of 50% at the top**/
+.size-chart {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: rgb(83, 38, 38);
+    padding-top: 50px;
+
+}
+
+h4 {
+    font-style: italic;
+    font-weight: 800;
+}
+
+/**Table header has been given a background color**/
+th {
+    background-color: rgb(182, 118, 118);
+}
+
+
+/**Borders have been collapsed and width set**/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid rgb(185, 163, 154);
+}
+
+/**On mouseover the color on the table rows changes**/
+tr:hover {
+    background-color: rgb(230, 196, 182);
+}
+
+
+
+/**....................ABOUT US PAGE.....................**/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h2,
+h3 {
+    text-align: center;
+    font-style: normal;
+    color: rgb(77, 31, 31);
+
+}
+
+
+/**Image items moved next to each other and they wrap once column is filled, 
+    width set and given equal margin on both sides**/
+.column {
+    padding: 0 20px;
+    display: inline-block;
+
+    width: 20%;
+    margin-left: 30px;
+    margin-right: 70px;
+
+
+}
+
+/**Cards display next to each other**/
+.card {
+    box-shadow: 0 4px 8px 0 rgb(226, 202, 192);
+    margin: 8px;
+    display: inline-block;
+    width: 120%;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+
+
+}
+
+.card img {
+    border: 1px solid rgb(226, 202, 192);
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+
+}
+
+/**Text aligned to the center, font style added**/
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(226, 202, 192);
+    font-weight: 600;
+    color: whitesmoke;
+    font-style: italic;
+    font-size: 18px;
+}
+
+/**Font style used as required in task**/
+.title {
+    color: rgb(146, 104, 104);
+
+    font-style: italic;
+    font-weight: 600;
+}
+
+/**Contact button customised**/
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(143, 105, 105);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+/**On hover, the button changes color**/
+.button:hover {
+    background-color: rgb(253, 121, 121);
+
+}
+
+/**Testimonial section customised, given border and background color**/
+#container {
+    border: transparent;
+    background-color: rgb(247, 231, 231);
+    border-radius: 5px;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    animation: animate 5s ease infinite;
+}
+
+/**A different font style as required in the task**/
+.testimony {
+    font-style: oblique;
+    font-weight: 800;
+}
+
+/**Images position set to be next **/
+#container img {
+    float: left;
+    margin-right: 20px;
+
+    border-radius: 50%;
+}
+
+#container span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/*..................SHIPPING PAGE....................*/
+
+/*Items layout on top of each other, postion not changed*/
+.delivery {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+/**Moved contents to the center**/
+.delivery {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+/* Hide the browser's default radio button */
+.delivery input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Created a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(241, 222, 222);
+    border-radius: 50%;
+
+}
+
+/* On mouse-over, background color shows */
+.delivery:hover input~.checkmark {
+    background-color: rgb(199, 161, 161);
+}
+
+/* When the radio button is checked, there is a blueish background */
+.delivery input:checked~.checkmark {
+    background-color: #507797;
+}
+
+/* The indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: inline-table;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.delivery input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Styled the indicator (dot/circle) */
+.delivery .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/*Shipping footer moved to the bottom of the page*/
+#shipping {
+    margin-top: 350px;
+}
+
+/**Footer text centered, background set to black, marging from the top set**/
+footer {
+    text-align: center;
+    padding: 2px;
+    background-color: black;
+    margin-top: 150px;
+
+}
+
+.footer {
+    color: whitesmoke;
+
+}
+
+/**Footer link has been customised, removed the default underline and changed the color **/
+.pg-footer a {
+    text-decoration: none;
+
+    color: tomato;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+/**Page made responsive hence can work on media with smaller screens**/
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Sources used in this task include previous tasks, Hyperiondev notes, You Tube, 
+Stackoverflow, W3Schools, Google.com, Codepen, Morzilla
+https://www.w3schools.com, https://developer.mozilla.org, https://blog.hubspot.com */
